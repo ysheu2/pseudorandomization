@@ -1,13 +1,13 @@
 %% Create a matrix with trials in a pseudorandomized order. 
 % You can control for number of stimulus and/or response repetitions in an
-% experiment.  For example, the current task wants equal number of trials
-% for a mix of wordCongruent and cueCongruent conditions while keeping the same
-% number of task switch/repeat as well as left/right buttom response for
-% each condition.  
+% experiment.  For example, in this 2x2 factorial design, we have two
+% factors (word congruency and cue congruency) in this task, each with two
+% levels; and we want to keep equal numbers of task switch/repeat and
+% left/right button response for each condition.  
 
 % Note that: numTrials must be multiplication of the number of elements in combo (eg 8 elements, numTrial must be 16,32,64...)
 
-function structure = pseudo2(numTrials,numBlocks)
+function structure = pseudo(numTrials,numBlocks)
 
 structure = cell(numTrials,numBlocks);
 
